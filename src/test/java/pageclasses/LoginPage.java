@@ -26,6 +26,8 @@ public class LoginPage {
     public WebElement invalidCredential;
     @FindBy(xpath="//*[@class='oxd-text oxd-text--h6 orangehrm-forgot-password-title']")
     public WebElement message;
+    @FindBy(linkText="Logout")
+    public WebElement logout;
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);}
 	
